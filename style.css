@@ -21,7 +21,17 @@ body{
     border-radius: 20px;
     border-top: 3px solid rgb(255, 0, 247);
     transition: background-color 0.5s;
+    animation: shadow-rotate 3s linear infinite;
 }
+
+@keyframes shadow-rotate{
+    0% {box-shadow: 10px 0px 20px rgb(255, 0, 247);}
+    25% {box-shadow: 0px 10px 20px rgb(255, 0, 247);}
+    50% {box-shadow: -10px 0px 20px rgb(255, 0, 247);}
+    75% {box-shadow: 0px -10px 20px rgb(255, 0, 247);}
+    100% {box-shadow: 10px 0px 20px rgb(255, 0, 247);}
+}
+
 
 #logo-heading-container{
     width: 100%;
@@ -49,6 +59,7 @@ body{
     padding: 5px;
     box-sizing: content-box;
     transition: background-color 0.5s;
+    cursor: pointer;
 }
 
 #prompt-container{
@@ -57,7 +68,7 @@ body{
 
 #prompt-container textarea{
     margin-top: 20px;
-    padding: 10px 0px 10px 20px;
+    padding: 10px 20px 10px 20px;
     width: 100%;
     resize: none;
     height: 10vh;
@@ -112,6 +123,7 @@ select, button {
     height: 100%;
     border-radius: 17px;
     width: 20%;
+
 }
 
 /*Button Theme CSS*/
@@ -148,4 +160,19 @@ select, button {
     color: white;
 }
 
+#image-div
+{
+    border: 1px solid purple;
+    width: 100%;
+    display: grid;
+    margin-top: 20px;
+    
+}
 
+
+#image-first{
+    border: 1px solid purple;
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+}
