@@ -43,7 +43,7 @@ body{
     align-items: center;
 }
 
-.fa-moon{ 
+#theme-button{ 
     border: 2px solid black;
     border-radius: 50%;
     padding: 5px;
@@ -76,4 +76,18 @@ body{
 #generate-button{
     background-color: rgb(107, 7, 238);
     color: white;
+}
+
+#options-div{
+    display: flex;
+    justify-content: space-between;
+    height: 40PX;
+    width: 100%;
+
+}
+
+select, button {
+    height: 100%;
+    border-radius: 17px;
+    width: 20%;
 }
