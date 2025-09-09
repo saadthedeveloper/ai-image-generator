@@ -19,7 +19,6 @@ body{
     max-width: 800px;
     padding: 18px;
     border-radius: 20px;
-    border-top: 3px solid rgb(255, 0, 247);
     transition: background-color 0.5s;
     animation: shadow-rotate 3s linear infinite;
 }
@@ -36,14 +35,17 @@ body{
 #logo-heading-container{
     width: 100%;
     display: flex;
+    gap: 10px;
     font-size: 15px;
     align-items: center;
 }
 
+#logo-heading-container h1{
+      font-weight: 600;
+}
+
 #logo-heading-container i{
     font-size: 30px;
-    /* border: 1px solid red; */
-    margin-right: 4px;
     color: rgb(255, 0, 247);
 }
 
@@ -64,10 +66,23 @@ body{
 
 #prompt-container{
     width: 100%;
+    position: relative;
+}
+
+#dice-icon{
+    position: absolute;
+    bottom: 45px;
+    right: 7px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    box-sizing: content-box;
+    padding: 6px;
+    border-radius: 50%;
 }
 
 #prompt-container textarea{
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 10px 20px 10px 20px;
     width: 100%;
     resize: none;
@@ -76,6 +91,7 @@ body{
     text-align: left; 
     border: none;
     clip-path: inset(0 round 10px);
+
 }
 
 
@@ -162,12 +178,13 @@ select, button {
 
 #resultant-image-div
 {
-    border: 1px solid purple;
+    border: 1px solid rgba(255, 0, 247, 0.411);
+    border-radius: 10px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
     flex-wrap: wrap;
     
 }
@@ -178,6 +195,7 @@ select, button {
     height: 150px;
     margin: 20px 0 20px 0;
     border-radius: 10px;
+    position: relative;
 }
 
 .loading-resultant-images{
@@ -215,3 +233,23 @@ select, button {
     100% {transform: rotate(360deg);}
 }
 
+.download-button{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.488);
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.download-button:hover{
+    translate: 0 -2px 0;
+    transition: 0.2s;
+}
+
+.download-button i{
+    color: white;
+}
