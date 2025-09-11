@@ -30,7 +30,7 @@
 
 
         <div id="prompt-container">
-            <textarea placeholder="Prompt your Imagination..." name="" id=""></textarea>
+            <textarea placeholder="Prompt your Imagination..." name="" id="text-area"></textarea>
             <i id="dice-icon" class="fa-solid fa-dice"></i>
         </div>
 
@@ -57,7 +57,9 @@
 
             <select name="" id="aspect-ratio">
                 <option value="Aspect Ratio" disabled selected hidden>Aspect Ratio</option>
-
+                <option value="Aspect Ratio">Square(1:1)</option>
+                <option value="Aspect Ratio">Landscape(16:9)</option>
+                <option value="Aspect Ratio">Portrait(9:16)</option>
             </select>
 
             <button id="generate-button"><i></i>Generate
@@ -122,6 +124,7 @@
 
 
     <script src="script.js"></script>
+    <script src="prompts.js"></script>
 </body>
 
 </html>
