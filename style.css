@@ -78,6 +78,12 @@ body{
     box-sizing: content-box;
     padding: 6px;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+#dice-icon:hover{
+    translate: 0 -2px 0;
+    transition: 0.2s;
 }
 
 #prompt-container textarea{
@@ -86,7 +92,7 @@ body{
     padding: 10px 20px 10px 20px;
     width: 100%;
     resize: none;
-    height: 10vh;
+    height: 15vh;
     border-radius: 10px;
     text-align: left; 
     border: none;
@@ -124,6 +130,7 @@ body{
 
 #generate-button{
     background-color: rgb(255, 0, 247);
+    font-size: 15px;
     color: white;
 }
 
