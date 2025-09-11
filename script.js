@@ -1,6 +1,8 @@
 let themeButton = document.querySelector("#theme-button");
 let body = document.querySelector("body");
 let mainContainer = document.querySelector("#main-container");
+let diceIcon = document.querySelector("#dice-icon");
+let textArea = document.querySelector("#text-area");
 
 themeButton.addEventListener('click', () => {
     if (themeButton.classList.contains("light-theme-button")) {
@@ -33,3 +35,12 @@ themeButton.addEventListener('click', () => {
         mainContainer.classList.add("light-theme-main-container");
     }
 })
+
+//Random Prompt Script
+
+diceIcon.addEventListener('click', () => {
+    let randomNumber = Math.floor(Math.random() * 21);
+    textArea.innerText = prompts[randomNumber]; 
+    textArea.value = prompts[randomNumber];
+
+});
